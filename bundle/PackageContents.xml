@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0"
+                    Name="NavisFavorites"
+                    AppVersion="0.2.0"
+                    Description="Navisworks 源模型收藏夹与修改版迁移"
+                    ProductCode="{A22F1E08-0897-4810-90E6-9AB2B94634BA}"
+                    UpgradeCode="{6D2840B6-6127-4C66-91A1-B637F5603240}">
+  <CompanyDetails Name="Local" />
+  <Components Description="Navisworks Manage 2024">
+    <RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw21" SeriesMax="Nw21" />
+    <ComponentEntry AppType="ManagedPlugin"
+                    ModuleName="./Contents/v21/0.2.0.0/NavisFavorites.dll" />
+  </Components>
+</ApplicationPackage>

@@ -1,0 +1,36 @@
+{
+  "timestampUtc": "2026-09-06T09:43:53.9893790Z",
+  "success": true,
+  "checks": [
+    {
+      "code": "JSON_HUMAN_READABLE",
+      "passed": true,
+      "detail": "Indented UTF-8 JSON contains Chinese names and favorite nodes."
+    },
+    {
+      "code": "JSON_ROUNDTRIP",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "code": "ATOMIC_BACKUP",
+      "passed": true,
+      "detail": "Previous valid JSON is retained as .bak."
+    },
+    {
+      "code": "CORRUPT_PRESERVED",
+      "passed": true,
+      "detail": "数据文件损坏，已保留副本：C:\\Users\\34084\\AppData\\Local\\Temp\\NavisFavorites-CoreTests-dfab898506f64069b27269ee2201db6f\\favorites.json.corrupt-20260906-174353-963"
+    },
+    {
+      "code": "MULTI_SELECTION",
+      "passed": true,
+      "detail": "single=True; ctrl=True; shift=True; ctrlShift=True; selectAll=True"
+    },
+    {
+      "code": "MODEL_FAMILY_NAMES",
+      "passed": true,
+      "detail": "normalized=True; date=DATE:2026-08-21/20260821; version=VERSION:V2.1/20001"
+    }
+  ]
+}

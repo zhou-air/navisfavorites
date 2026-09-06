@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AssemblyName>NavisFavorites.HostTests4</AssemblyName>
+    <RootNamespace>NavisFavorites.HostTests</RootNamespace>
+    <Version>0.2.0.4</Version>
+    <AssemblyVersion>0.2.0.4</AssemblyVersion>
+    <NavisworksInstallDir Condition="'$(NavisworksInstallDir)' == ''">E:\auto\Navisworks Manage 2024</NavisworksInstallDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autodesk.Navisworks.Api">
+      <HintPath>$(NavisworksInstallDir)\Autodesk.Navisworks.Api.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(NavisworksInstallDir)\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\NavisFavorites\Models\*.cs" Link="Core\Models\%(Filename)%(Extension)" />
+    <Compile Include="..\..\src\NavisFavorites\Storage\*.cs" Link="Core\Storage\%(Filename)%(Extension)" />
+    <Compile Include="..\..\src\NavisFavorites\Services\*.cs" Link="Core\Services\%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

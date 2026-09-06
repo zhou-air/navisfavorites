@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RibbonControl x:Uid="NavisFavoritesRibbon"
+               xmlns="clr-namespace:Autodesk.Windows;assembly=AdWindows"
+               xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+               xmlns:adwi="clr-namespace:Autodesk.Internal.Windows;assembly=AdWindows"
+               xmlns:system="clr-namespace:System;assembly=mscorlib"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               xmlns:local="clr-namespace:Autodesk.Navisworks.Gui.Roamer.AIRLook;assembly=navisworks.gui.roamer">
+  <RibbonTab Id="NavisFavorites.Tab" Title="收藏夹">
+    <RibbonPanel x:Uid="NavisFavorites.Panel">
+      <RibbonPanelSource x:Uid="NavisFavorites.PanelSource" Title="收藏夹">
+        <local:NWRibbonButton x:Uid="NavisFavorites.OpenPaneButton"
+                              Id="NavisFavorites.OpenPane"
+                              Size="Large"
+                              ShowText="True"
+                              Text="★ 收藏夹"
+                              Orientation="Vertical" />
+        <RibbonSeparator x:Uid="NavisFavorites.Separator" />
+        <local:NWRibbonButton x:Uid="NavisFavorites.AddSelectionButton"
+                              Id="NavisFavorites.AddSelection"
+                              Size="Large"
+                              ShowText="True"
+                              Text="★ 收藏当前选择…"
+                              Orientation="Vertical" />
+        <RibbonSeparator x:Uid="NavisFavorites.MigrationSeparator" />
+        <local:NWRibbonButton x:Uid="NavisFavorites.MatchRevisionButton"
+                              Id="NavisFavorites.MatchRevision"
+                              Size="Large"
+                              ShowText="True"
+                              Text="版本迁移…"
+                              Orientation="Vertical" />
+      </RibbonPanelSource>
+    </RibbonPanel>
+  </RibbonTab>
+</RibbonControl>

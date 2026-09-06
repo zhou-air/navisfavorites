@@ -1,0 +1,44 @@
+# Build products and dependencies
+**/bin/
+**/obj/
+artifacts/
+build/
+dist/
+publish/
+node_modules/
+.vs/
+.idea/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.user
+*.suo
+*.log
+*.tmp
+*.dll
+*.exe
+*.pdb
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Local business data, engineering models and generated exports
+data/
+exports/
+output/
+outputs/
+backups/
+*.db
+*.db-*
+*.sqlite*
+*.nwc
+*.nwd
+*.nwf
+*.dwg
+*.dxf
+*.xlsx
+*.xls
+*.zip
